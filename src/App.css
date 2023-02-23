@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+}
+
+.black,
+.white {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.black {
+  left: 0;
+  padding: 5px;
+  width: 30%;
+  background: black;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.sign-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sign-container {
+  text-align: center;
+  background: whitesmoke;
+  padding: 10px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.sign-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.sign-name {
+  text-transform: uppercase;
+  background: transparent;
+  border: solid white 2px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  margin: 10px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sign-name:hover {
+  cursor: pointer;
+}
+
+.white {
+  right: 0;
+  width: 70%;
+  background: whitesmoke;
+  padding: 10px;
+}
+
+.white h2 {
+  font-size: 3rem;
+}
+
+.white .sign {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.white button {
+  background: transparent;
+  padding: 5px;
+  border: darkslategray 1px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.white button:hover {
+  background: darkslategray;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.white .horoscope,
+.white .best,
+.white .worst {
+  letter-spacing: 2px;
+}
+
+.white .best {
+  width: 120px;
+  border-bottom: 5px solid blueviolet;
+}
+
+.white .worst {
+  width: 120px;
+  border-bottom: 5px solid orangered;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .white,
+  .black {
+    position: relative;
+    width: 100%;
+  }
+
+  .white {
+    top: 0;
+  }
+
+  .black {
+    bottom: 0;
+  }
+}
